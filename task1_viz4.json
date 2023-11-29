@@ -1,0 +1,84 @@
+{
+  "config": {
+    "view": {"continuousWidth": 600, "continuousHeight": 420, "stroke": null},
+    "facet": {"spacing": 8},
+    "legend": {"orient": "bottom"}
+  },
+  "data": {"name": "data-5b015071451ab4757f845608224780c1"},
+  "mark": {"type": "arc", "outerRadius": 120},
+  "encoding": {
+    "color": {"field": "CAMERA ID", "legend": null, "type": "nominal"},
+    "facet": {"columns": 2, "field": "year", "type": "ordinal"},
+    "theta": {"field": "VIOLATIONS", "stack": true, "type": "quantitative"},
+    "tooltip": [
+      {"field": "CAMERA ID", "type": "quantitative"},
+      {"field": "VIOLATIONS", "type": "quantitative"}
+    ]
+  },
+  "title": "Total Violations by Camera ID",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json",
+  "datasets": {
+    "data-5b015071451ab4757f845608224780c1": [
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1093,
+        "VIOLATIONS": 132,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1412,
+        "VIOLATIONS": 230,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1413,
+        "VIOLATIONS": 1378,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1472,
+        "VIOLATIONS": 88,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1663,
+        "VIOLATIONS": 299,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1721,
+        "VIOLATIONS": 485,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 1723,
+        "VIOLATIONS": 358,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 2572,
+        "VIOLATIONS": 196,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 2701,
+        "VIOLATIONS": 93,
+        "year": "2023"
+      },
+      {
+        "VIOLATION DATE": 2023,
+        "CAMERA ID": 3072,
+        "VIOLATIONS": 146,
+        "year": "2023"
+      }
+    ]
+  }
+}

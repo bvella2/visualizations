@@ -1,0 +1,40 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-67d78fc2f95f223d9470d742e38e1a4b"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "tooltip": [
+      {"field": "INTERSECTION", "title": "Intersection", "type": "nominal"},
+      {"field": "Count", "title": "Violations", "type": "quantitative"}
+    ],
+    "x": {
+      "field": "INTERSECTION",
+      "sort": "-y",
+      "title": "Intersection",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Count",
+      "title": "Number of Violations",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "title": "Top 10 Intersections with the Most Violations",
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json",
+  "datasets": {
+    "data-67d78fc2f95f223d9470d742e38e1a4b": [
+      {"INTERSECTION": "CALIFORNIA AND DIVERSEY", "Count": 59},
+      {"INTERSECTION": "KOSTNER AND NORTH", "Count": 57},
+      {"INTERSECTION": "STONEY ISLAND AND 79TH", "Count": 48},
+      {"INTERSECTION": "OGDEN AND KOSTNER", "Count": 40},
+      {"INTERSECTION": "LARAMIE AND MADISON", "Count": 40},
+      {"INTERSECTION": "LAKE SHORE DR AND BELMONT", "Count": 40},
+      {"INTERSECTION": "LAFAYETTE AND 87TH", "Count": 40},
+      {"INTERSECTION": "KEDZIE AND 26TH", "Count": 40},
+      {"INTERSECTION": "FOSTER AND NAGLE", "Count": 40},
+      {"INTERSECTION": "CORTLAND AND ASHLAND", "Count": 40}
+    ]
+  }
+}

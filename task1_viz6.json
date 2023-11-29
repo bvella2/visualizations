@@ -1,0 +1,622 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-ed88c07c6336a6f03d39e856316a1df5"},
+  "mark": {"type": "rect"},
+  "encoding": {
+    "color": {
+      "field": "Correlation",
+      "scale": {"domain": [-1, 1], "scheme": "blueorange"},
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "Variable 1", "title": "Variable 1", "type": "nominal"},
+      {"field": "Variable 2", "title": "Variable 2", "type": "nominal"},
+      {"field": "Correlation", "title": "Correlation", "type": "quantitative"}
+    ],
+    "x": {
+      "field": "Variable 1",
+      "sort": {"field": "Variable 1", "order": "ascending"},
+      "title": null,
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Variable 2",
+      "sort": {"field": "Variable 2", "order": "ascending"},
+      "title": null,
+      "type": "ordinal"
+    }
+  },
+  "height": 600,
+  "title": "Correlation Heatmap",
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json",
+  "datasets": {
+    "data-ed88c07c6336a6f03d39e856316a1df5": [
+      {"Variable 1": "CAMERA ID", "Variable 2": "CAMERA ID", "Correlation": 1},
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.15992433814453985
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.3881986445934263
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "CAMERA ID",
+        "Correlation": -0.7790008518354896
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "CAMERA ID",
+        "Correlation": -0.7790848016914962
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.3783848766130938
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "CAMERA ID",
+        "Correlation": -0.005458277682250938
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.07181414925252241
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.3928747059872993
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "CAMERA ID",
+        "Correlation": 0.07476110529208913
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "CAMERA ID",
+        "Correlation": -0.05292936879344631
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.15992433814453985
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.2036016159698389
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": -0.1767622441116804
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": -0.17719127042940674
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.2022803729349066
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.008866105367580037
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": -0.13551057801553473
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.1207101945635722
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": 0.026391981692244392
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "VIOLATIONS",
+        "Correlation": -0.007523905124235096
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 0.3881986445934263
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 0.2036016159698389
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "X COORDINATE",
+        "Correlation": -0.46954897006597857
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "X COORDINATE",
+        "Correlation": -0.4722567946409899
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 0.9998949457231183
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 0.09248374401273866
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "X COORDINATE",
+        "Correlation": -0.09672144238286033
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "X COORDINATE",
+        "Correlation": 0.46214696876028283
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "X COORDINATE",
+        "Correlation": -0.10451152193485566
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "X COORDINATE",
+        "Correlation": -0.019526399953205768
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.7790008518354896
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.1767622441116804
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.46954897006597857
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": 0.9999952758986251
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.4567483613140238
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.019147251442085494
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.08404129814116194
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.5830547909217914
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": -0.043987141778173505
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "Y COORDINATE",
+        "Correlation": 0.27049606643109125
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.7790848016914962
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.17719127042940674
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.4722567946409899
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "LATITUDE",
+        "Correlation": 0.9999952758986251
+      },
+      {"Variable 1": "LATITUDE", "Variable 2": "LATITUDE", "Correlation": 1},
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.4594766227469042
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.019457002426356913
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.0835830250676528
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.5836937633738909
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "LATITUDE",
+        "Correlation": -0.04355977215104767
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "LATITUDE",
+        "Correlation": 0.2701047219026505
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "LONGITUDE",
+        "Correlation": 0.3783848766130938
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "LONGITUDE",
+        "Correlation": 0.2022803729349066
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "LONGITUDE",
+        "Correlation": 0.9998949457231183
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "LONGITUDE",
+        "Correlation": -0.4567483613140238
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "LONGITUDE",
+        "Correlation": -0.4594766227469042
+      },
+      {"Variable 1": "LONGITUDE", "Variable 2": "LONGITUDE", "Correlation": 1},
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "LONGITUDE",
+        "Correlation": 0.0929214062770028
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "LONGITUDE",
+        "Correlation": -0.09912613420854016
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "LONGITUDE",
+        "Correlation": 0.4563626529665426
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "LONGITUDE",
+        "Correlation": -0.10607373623618734
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "LONGITUDE",
+        "Correlation": -0.015506296921371975
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": -0.005458277682250938
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 0.008866105367580037
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 0.09248374401273866
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": -0.019147251442085494
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": -0.019457002426356913
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 0.0929214062770028
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": -0.1598857835041408
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 0.2525674698209831
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": 0.03605554832172129
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "Historical Wards 2003-2015",
+        "Correlation": -0.18944654891584503
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Zip Codes",
+        "Correlation": 0.07181414925252241
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.13551057801553473
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.09672144238286033
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.08404129814116194
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.0835830250676528
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.09912613420854016
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.1598857835041408
+      },
+      {"Variable 1": "Zip Codes", "Variable 2": "Zip Codes", "Correlation": 1},
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.08122651192763691
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Zip Codes",
+        "Correlation": 0.02488732907988504
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "Zip Codes",
+        "Correlation": -0.061533039557404356
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.3928747059872993
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.1207101945635722
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.46214696876028283
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Community Areas",
+        "Correlation": -0.5830547909217914
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Community Areas",
+        "Correlation": -0.5836937633738909
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.4563626529665426
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.2525674698209831
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "Community Areas",
+        "Correlation": -0.08122651192763691
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Community Areas",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Community Areas",
+        "Correlation": 0.1385744743152049
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "Community Areas",
+        "Correlation": -0.2863816303593218
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.07476110529208913
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.026391981692244392
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Census Tracts",
+        "Correlation": -0.10451152193485566
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Census Tracts",
+        "Correlation": -0.043987141778173505
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Census Tracts",
+        "Correlation": -0.04355977215104767
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Census Tracts",
+        "Correlation": -0.10607373623618734
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.03605554832172129
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.02488732907988504
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.1385744743152049
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Census Tracts",
+        "Correlation": 1
+      },
+      {
+        "Variable 1": "Wards",
+        "Variable 2": "Census Tracts",
+        "Correlation": 0.13116394139418971
+      },
+      {
+        "Variable 1": "CAMERA ID",
+        "Variable 2": "Wards",
+        "Correlation": -0.05292936879344631
+      },
+      {
+        "Variable 1": "VIOLATIONS",
+        "Variable 2": "Wards",
+        "Correlation": -0.007523905124235096
+      },
+      {
+        "Variable 1": "X COORDINATE",
+        "Variable 2": "Wards",
+        "Correlation": -0.019526399953205768
+      },
+      {
+        "Variable 1": "Y COORDINATE",
+        "Variable 2": "Wards",
+        "Correlation": 0.27049606643109125
+      },
+      {
+        "Variable 1": "LATITUDE",
+        "Variable 2": "Wards",
+        "Correlation": 0.2701047219026505
+      },
+      {
+        "Variable 1": "LONGITUDE",
+        "Variable 2": "Wards",
+        "Correlation": -0.015506296921371975
+      },
+      {
+        "Variable 1": "Historical Wards 2003-2015",
+        "Variable 2": "Wards",
+        "Correlation": -0.18944654891584503
+      },
+      {
+        "Variable 1": "Zip Codes",
+        "Variable 2": "Wards",
+        "Correlation": -0.061533039557404356
+      },
+      {
+        "Variable 1": "Community Areas",
+        "Variable 2": "Wards",
+        "Correlation": -0.2863816303593218
+      },
+      {
+        "Variable 1": "Census Tracts",
+        "Variable 2": "Wards",
+        "Correlation": 0.13116394139418971
+      },
+      {"Variable 1": "Wards", "Variable 2": "Wards", "Correlation": 1}
+    ]
+  }
+}
