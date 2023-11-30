@@ -4,92 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Visualizations</title>
+    <title>Interactive Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://d3js.org/d3-geo.v2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+   
+    
     <script src="main.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1>Dash Board for Chicago Red Light Traffic Violations</h1>
-        <nav>
-            <ul>
-                <li><a href="#scatterPlot">Scatter Plot</a></li>
-                <li><a href="#barPlot">Bar Plot</a></li>
-                <li><a href="#PieChart">PieChart</a></li>
-                <li><a href="#Choropleth">Choropleth</a></li>
-                <!-- <li><a href="#barPlot">Bar Plot</a></li> -->
-                <!-- Add other visualization links here -->
-            </ul>
-        </nav>
+        <h1>Interactive Dashboard</h1>
     </header>
+   
+  
+        
+    </div>
+    
+    <div id="map-bar-container">
+        <div id="map" class="card"></div>
+    
+        <div id="bar-charts" class="card"></div>
+       
+    </div>
+   
+    
+    
+    <!-- <div id="tooltip"></div> -->
+    <div class="controls">
+        <label for="timeDropdown">Select Time:</label>
+        <select id="timeDropdown">
+            <option value="year">Yearly</option>
+            <option value="month">Monthly</option>
+            <option value="week">Weekly</option>
+        </select>
+        <div id="visualization"class="card"></div>
 
-    <main>
-        <!-- Scatter Plot Card -->
-        <div >
-            <section id="visualization1" class="card" ></section>
-            <section id="visualization2" class="card" ></section>
-            <section id="visualization3" class="card" ></section>
-            <section id="visualization4" class="card" ></section>
-            <section id="visualization5" class="card" ></section>
-            <section id="visualization6" class="card" ></section>
+    </div>
+   
+    <section id="PieChart" class="card"></section>
+    
 
-            <section  class="strip" style="width: 75%; height: 10%;" > <h2>Scatter Plot</h2></section>
-            <section id="scatterPlot" class="card" >
-            </section> 
-            <h2>Bar Plot</h2>
-            <p>Description about the bar Plot visualization</p>
-            <section  class="strip" style="width: 75%; height: 10%;" ></section>
-            <section id="barPlot" class="card" ></section>
-            <section  class="strip" style="width: 75%; height: 10%;" ></section>
-            <section id="PieChart" class="card"></section>
-            <section id="task2" class="card"></section>
-            <section  class="strip" style="width: 75%; height: 10%;" ></section>
-            <section id="Choropleth"class="card"></section>
-        </div>
+    
 
-        <div>
-            <div id="map" style="width: 700px; height: 600px;"></div>
+    
+    
 
-    <script>
-        // Fetch the data from the JSON file
-        fetch("https://raw.githubusercontent.com/bvella2/dt/main/top_50_violated_areas.json")
-            .then(response => response.json())
-            .then(data => {
-                createHeatmap(data);
-            })
-            .catch(error => {
-                console.error('Error loading data:', error);
-            });
-
-        // Function to create the heatmap
-        function createHeatmap(top50Areas) {
-            // Initialize the map centered around Chicago
-        var map = L.map("map").setView([41.8781, -87.6298], 11);
-
-        // Add a basemap layer (e.g., OpenStreetMap)
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-
-        // Create a heatmap layer for the top 50 areas
-        var heatData = top50Areas.map(function (area) {
-            return [area.LATITUDE, area.LONGITUDE, area.VIOLATIONS];
-        });
-
-        // Add the heatmap layer
-        L.heatLayer(heatData, { radius: 25, maxZoom: 13 }).addTo(map);
-        }
-    </script>
-        </div>
-        <!-- Add other sections for different visualizations -->
-    </main>
 
     
 </body>
