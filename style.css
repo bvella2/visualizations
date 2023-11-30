@@ -1,105 +1,35 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    /* background-color: gray; */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.controls {
-    margin: 20px;
-}
-
-#visualization {
-    margin: 20px;
-    text-align: center;
-}
-/* .tooltip {
-    position: absolute;
-    background: black;
-    padding: 8px;
-    border: 1px solid #181717;
-    border-radius: 5px;
-    font-size: 12px;
-    pointer-events: none;
-    visibility: hidden;
-    z-index: 1; 
-} */
-
-.bubble {
-    fill: steelblue;
-    opacity: 0.7;
-    stroke: aquamarine;
-    height: 60px;
-    width:60px;
-   
-}
-.bubble:hover{
-    cursor: pointer;
-}
-
-#map {
-    height: 600px;
-    width: 700px;
-    
-}
-/* #map {
-    height: 600px;
-    float: left;
-    width: 60%;
-} */
-
-#bar-charts {
-    width: 400px;
-    height: 600px;
-    margin-top: 20px;
-}
-
-#line-chart {
-    margin-top: 20px;
-}
-.bar {
-    fill: steelblue;
-}
-
-.tooltip {
-    position: absolute;
-    background: white;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 12px;
-    /* pointer-events: none; */
-    visibility: hidden;
-}
-
-
-#line-chart {
-    margin-top: 20px;
-}
-
-#area-chart {
-    margin-top: 20px;
-}
-/* #bar-charts {
-    margin-top: 20px;
-} */
-
-
-/* .card {
-    width: 400px;
+    background-color: #f0f0f0;
     padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #fff;
-} */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Add card styling */
 .card {
     background-color: #fff;
     border-radius: 8px;
@@ -108,7 +38,15 @@ header {
     margin-bottom: 20px;
 }
 
-#map-bar-container{
-    margin-top: 20px;
-    display: flex;
+/* Add space between card title and content */
+.card h2 {
+    margin-top: 0;
+}
+.strip{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    margin-bottom: 4px;
+    
 }
